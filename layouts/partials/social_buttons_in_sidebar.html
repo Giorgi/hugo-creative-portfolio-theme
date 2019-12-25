@@ -1,4 +1,9 @@
 <p class="social">
+  {{ with .Site.Params.social.github }}
+  <a href="{{ . }}" data-animate-hover="pulse" class="external">
+    <i class="fa fa-github"></i>
+  </a>
+  {{end}}
   {{ with .Site.Params.social.facebook }}
   <a href="{{ . }}" data-animate-hover="pulse" class="external facebook">
     <i class="fa fa-facebook"></i>
@@ -32,11 +37,6 @@
   {{ with .Site.Params.social.stackoverflow }}
   <a href="{{ . }}" data-animate-hover="pulse" class="external">
     <i class="fa fa-stack-overflow"></i>
-  </a>
-  {{end}}
-  {{ with .Site.Params.social.github }}
-  <a href="{{ . }}" data-animate-hover="pulse" class="external">
-    <i class="fa fa-github"></i>
   </a>
   {{end}}
   {{ with .Site.Params.social.youtube }}
