@@ -28,6 +28,12 @@
                                   {{ .Summary }}
                                 {{ end }}
                             </p>
+							{{ if isset .Params "techs"}}
+							<hr>
+							<p>
+							Built with: {{ delimit .Params.techs ", " }}
+							</p>
+							{{end}}
                           </div>
                       </div>
                   </div>
