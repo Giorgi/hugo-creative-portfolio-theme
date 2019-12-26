@@ -12,6 +12,19 @@
 		 Built with: {{ delimit .Params.techs ", " }}
 		 </p>
 		 {{end}}
+{{ if isset .Params "images"}}		 
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="row">
+		{{ range .Params.images }}
+		<a href="{{. | absURL}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                <img src="{{. | absURL}}" class="img-fluid">
+        </a>
+        {{ end }}
+        </div>
+    </div>
+</div>
+{{end}}
 		 {{ if isset .Params "github"}}
 		 <!-- Place this tag where you want the button to render. -->
 		<a class="github-button" href="https://github.com/{{.Params.github}}" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star {{.Params.github}} on GitHub">Star on GitHub</a>
