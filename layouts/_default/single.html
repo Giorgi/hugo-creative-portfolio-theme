@@ -17,8 +17,9 @@
     <div class="col-md-8">
         <div class="row">
 		{{ if isset .Params "images"}}
+			{{$cl:= div 12 (len .Params.images)}}
 			{{ range .Params.images }}
-			<a href="{{. | absURL}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+			<a href="{{. | absURL}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-{{$cl}}">
 					<img src="{{. | absURL}}" class="img-fluid">
 			</a>
 			{{ end }}
