@@ -861,7 +861,7 @@ a:active {
   letter-spacing: 0.1em;
 }
 .box-masonry h2 a {
-  word-break: break-all;
+  word-break: break-word;
   color: #000;
   border-bottom: solid 1px transparent;
 }
@@ -963,9 +963,9 @@ a:active {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   font-family: 'FontAwesome';
-  content: '\f105';
+  content: 'View Details \f105';
   text-align: center;
-  font-size: 50px;
+  font-size: 36px;
   color: #555555;
 }
 .box-masonry .box-masonry-image:hover {
