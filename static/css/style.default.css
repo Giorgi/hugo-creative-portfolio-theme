@@ -347,7 +347,7 @@ SIDEBAR + RIGHT COLUMN
   text-decoration: none;
 }
 .sidebar-p {
-  color: #999999;
+  color: #555555;
   font-size: 14px;
 }
 .sidebar-menu {
@@ -408,7 +408,7 @@ SIDEBAR + RIGHT COLUMN
 }
 .content-column-content p,
 .content-column-content li {
-  color: #999999;
+  color: #555555;
 }
 .content-column-content ul li {
   list-style-type: none;
@@ -652,7 +652,7 @@ COPYRIGHT
 =====================
 */
 .copyright {
-  color: #999999;
+  color: #555555;
   font-size: 13px;
 }
 .copyright p.credit {
@@ -874,7 +874,7 @@ a:active {
   padding: 15px 20px 15px;
 }
 .box-masonry .box-masonry-text p {
-  color: #999999;
+  color: #555555;
   font-size: 14px;
 }
 .box-masonry .box-masonry-hover-text-header {
